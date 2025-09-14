@@ -27,61 +27,107 @@ Structured data was imported and saved in the database from on premise and cloud
 Add query: CREATE DATABASE DSA_MG
 
 2.	Update employee table imported?
-Add query: 
+   
+Add query:
+
 UPDATE EMPLOYEE
+
 SET LASTNAME = 'ABUBAKAR'
+
 WHERE STAFFID = 'AB234'
 
 3.	Total no of staff from each state?
+   
 Add query:
+
 SELECT [SELECT STATE OF ORIGIN], COUNT(DISTINCT STAFFID) AS TOTALEMPLOYEE
+
 FROM EMPLOYEE
+
 GROUP BY [STATE OF ORIGIN]
+
 ORDER BY TOTALEMPLOYEE DESC
 
 4.	Total no of staff in each state?
+   
 Add query:
+
 SELECT [DEPARTMENT], COUNT(DISTINCT STAFFID) AS TOTALEMPLOYEE
+
 FROM SALARY
+
 GROUP BY [DEPARTMENT]
+
 ORDER BY TOTALEMPLOYEE DESC
 
 5.	Update of staff salary by 5%?
+   
 Add query:
+
 CREATE VIEW NEW_SALARY AS
+
 UPDATE salary
+
 SET salary  = salary + (salary * 0.05)
 
 6.	Creation of view Mall transaction?
+   
 Add query:
+
 CREATE VIEW vw_DSA_Mall_Transaction
+
 AS
+
 select 
+
     'DSA MALL GHANA' AS BRANCH, customerid as [CUSTOMER ID],
+	
 	firstname as [FIRST NAME], lastname as [LAST NAME],
+ 
 	customer_gender as GENDER, TRANSACTIONDATE AS [DATE],
+ 
 	[ADDRESS], transaction_amount AS [TRANSACTION AMOUNT]
+ 
 FROM [dbo].[Mall_Ghana]
+
 UNION
+
 select 
+
     'DSA MALL IKEJA' AS BRANCH, customerid as [CUSTOMER ID],
+	
 	firstname as [FIRST NAME], lastname as [LAST NAME],
+ 
 	customer_gender as GENDER, TRANSACTIONDATE AS [DATE],
+ 
 	[ADDRESS], transaction_amount AS [TRANSACTION AMOUNT]
+ 
 FROM [dbo].[Mall_IKEJA]
+
 UNION
+
 select 
+
     'DSA MALL PORT HARCOURT' AS BRANCH, customerid as [CUSTOMER ID],
+	
 	firstname as [FIRST NAME], lastname as [LAST NAME],
+ 
 	customer_gender as GENDER, TRANSACTIONDATE AS [DATE],
+ 
 	[ADDRESS], transaction_amount AS [TRANSACTION AMOUNT]
+
 FROM [dbo].[Mall_PORT HARCOURT]
 
 7.	Total sale per branch
+	
 Add query:
+
 select branch, sum([transaction amount]) as [Total sales]
+
 from  [dbo].[vw_DSA_Mall_Transaction]
+
 group by BRANCH
+
 order by [Total sales] desc
 
 8.	Extraction of result to excel and Back up of Database.
