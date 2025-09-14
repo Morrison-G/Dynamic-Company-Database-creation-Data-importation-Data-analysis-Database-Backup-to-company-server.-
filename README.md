@@ -132,3 +132,5 @@ order by [Total sales] desc
 
 
 8.	Extraction of result to excel and Back up of Database.
+9.	<img width="657" height="348" alt="image" src="https://github.com/user-attachments/assets/d063bb6b-ed4b-4ba8-b034-879f2a8ad125" />
+
