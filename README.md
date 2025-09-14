@@ -123,11 +123,9 @@ FROM [dbo].[Mall_PORT HARCOURT]
 Add query:
 
 select branch, sum([transaction amount]) as [Total sales]
-
 from  [dbo].[vw_DSA_Mall_Transaction]
-
 group by BRANCH
-
 order by [Total sales] desc
+
 
 8.	Extraction of result to excel and Back up of Database.
