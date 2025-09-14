@@ -134,3 +134,13 @@ order by [Total sales] desc
 8.	Extraction of result to excel and Back up of Database.
 9.	<img width="657" height="348" alt="image" src="https://github.com/user-attachments/assets/d063bb6b-ed4b-4ba8-b034-879f2a8ad125" />
 
+> ## Findings
+1.	Ghana mall had the highest total sales.
+2.	Ghana mall had the highest total number of staffs.
+3.	Value of each staff salary when increased by 5%.
+4.	Total number of staffs from different state.
+
+> ## Conclusion
+Using SQL SSMS to create a Database will serve as a company data house where data of the company is stored preserved and used for daily analysis to support clear business decision making of the company.
+
+
