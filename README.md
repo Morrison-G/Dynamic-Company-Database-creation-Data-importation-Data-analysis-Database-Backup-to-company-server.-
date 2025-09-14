@@ -6,16 +6,20 @@ Case Study by Morrison (Analyst).
 > ## Project Overview
 This case study - Dynamic Company Database creation, data importation, analysis & backup of Database. 
 
-## Data Content
+> ## Data Content
 ### Database: 1 in Total.
  ### Tables: were 8 in Total.
 Tables Name: Employee, Mall ghana, Mall ikeja, Mall portharcourt, payment, salary.
 View Tables Name: Mall transaction, Employee salary.
 
-## Tool Used
+> ## Tool Used
 SQL Server-SQL Studio (SQL quires & Sub quires).
 
-## SQL Database Creation
-
+> ## SQL Database Creation
 ## Steps
 [CREATE DATABASE DSA_MG]
+## Data importation Actions
+Structured data was imported and saved in the database from on premise and cloud for analysis.
+<img width="560" height="298" alt="image" src="https://github.com/user-attachments/assets/d088e049-4d18-44b3-8cd6-348e9919bfe2" />
+> ## Key Business Questions Answered
+
